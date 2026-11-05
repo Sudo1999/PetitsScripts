@@ -1,10 +1,9 @@
 import os    # os est historiquement la bibliothèque de manipulation du système de fichiers (os.listdir, os.rename, os.path.join…). Mais ici elle est importée sans être utilisée — tout est fait avec pathlib.
-from pathlib import Path    # Au lieu d'importer tout le module 'pathlib' comme pour les autres imports, la syntaxe permet d'en cibler un élément précis et de le rendre directement disponible. La classe Path du module pathlib représente les chemins de fichiers de façon objet. C'est elle qui permet d'utiliser la fonction DOSSIER.iterdir() (lister le contenu du dossier), fichier.stem (nom sans extension), fichier.is_file() (test fichier), et destination.mkdir() (créer le dossier).
-import shutil    # Quand on importe tout le module comme ici avec shutil, pour utiliser une fonction, il faut la précéder du nom du module, par exemple shutil.move(), qui déplace un fichier d'un dossier vers un autre (y compris vers un autre disque, où un simple renommage ne suffit pas).
+from pathlib import Path    # Au lieu d'importer tout le module 'pathlib' comme pour les autres imports, la syntaxe permet d'en cibler un élément précis et de le rendre directement disponible. La classe Path du module pathlib représente les chemins de fichiers de façon objet.
+import shutil    # Quand on importe tout le module comme ici avec shutil, pour utiliser une fonction, il faut la précéder du nom du module, par exemple shutil.move(), qui déplace un fichier d'un dossier vers un autre.
 import sys
 import re
 import time
-#from send2trash import send2trash
 
 #### Fonctions ####
 ###################
