@@ -95,7 +95,7 @@ if (not saisie):
 DOSSIER = Path(saisie)
 if not DOSSIER.is_dir():
   input(f"Erreur : le dossier '{DOSSIER}' est introuvable. Appuyez sur la touche Entrée...")
-  sys.exit(f"Erreur : le dossier '{DOSSIER}' est introuvable.")
+  sys.exit()
 print("Vous êtes dans le dossier " + saisie)
 
 #### Règle à appliquer ####
