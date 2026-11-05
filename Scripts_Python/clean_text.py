@@ -103,4 +103,3 @@ if __name__ == "__main__":
 
 # Usage :
 # python clean_text.py Courrier_International.txt Clean_Text.txt
-
